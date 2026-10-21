@@ -34,7 +34,7 @@
 /* Nav-specific overrides when liquid-glass is applied */
 nav.liquid-glass {
   position: fixed;
-  background: rgba(13,27,42,0.6);
+  background: rgba(7,52,83,0.6);
 }
 
 .liquid-glass-strong {
@@ -68,7 +68,7 @@ nav.liquid-glass {
   overflow: hidden;
   height: 380px;
   margin-bottom: 2.5rem;
-  border: 1px solid rgba(201,168,76,0.25);
+  border: 1px solid rgba(253,229,203,0.25);
 }
 .cinematic-section video {
   width: 100%;
@@ -80,8 +80,8 @@ nav.liquid-glass {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top,
-    rgba(13,27,42,0.82) 0%,
-    rgba(13,27,42,0.28) 45%,
+    rgba(7,52,83,0.82) 0%,
+    rgba(7,52,83,0.28) 45%,
     transparent 100%);
   display: flex;
   align-items: flex-end;
@@ -90,7 +90,7 @@ nav.liquid-glass {
 .cinematic-label {
   font-family: "Space Mono", monospace;
   font-size: 0.6rem;
-  color: rgba(201,168,76,0.9);
+  color: rgba(253,229,203,0.9);
   letter-spacing: 0.25em;
   text-transform: uppercase;
   display: block;
@@ -100,7 +100,7 @@ nav.liquid-glass {
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(1.5rem, 3vw, 2.2rem);
   font-weight: 300;
-  color: #f5f0e8;
+  color: #fff1e2;
   line-height: 1.2;
 }
 
@@ -138,33 +138,33 @@ nav.liquid-glass {
   gap: 1.2rem;
   margin: 2.5rem 0 2rem;
 }
-.section-divider .sd-line { flex: 1; height: 1px; background: linear-gradient(90deg, rgba(201,168,76,0.4), transparent); }
-.section-divider .sd-label { font-family: "Space Mono", monospace; font-size: 0.6rem; color: rgba(201,168,76,0.8); letter-spacing: 0.25em; text-transform: uppercase; white-space: nowrap; }
-.section-divider .sd-line-r { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.4)); }
+.section-divider .sd-line { flex: 1; height: 1px; background: linear-gradient(90deg, rgba(253,229,203,0.4), transparent); }
+.section-divider .sd-label { font-family: "Space Mono", monospace; font-size: 0.6rem; color: rgba(253,229,203,0.8); letter-spacing: 0.25em; text-transform: uppercase; white-space: nowrap; }
+.section-divider .sd-line-r { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(253,229,203,0.4)); }
 
 /* ── Estado de actividades ────────────────────────────────────── */
 .status { display: inline-flex; align-items: center; gap: 0.35rem; font-family: "Space Mono", monospace; font-size: 0.56rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 999px; white-space: nowrap; }
 .status.done     { background: rgba(46,204,113,0.12); border: 1px solid rgba(46,204,113,0.4); color: #6fdc9b; }
-.status.progress { background: rgba(201,168,76,0.14); border: 1px solid rgba(201,168,76,0.5); color: #e6c97a; }
+.status.progress { background: rgba(253,229,203,0.14); border: 1px solid rgba(253,229,203,0.5); color: #fff0df; }
 .status.planned  { background: rgba(138,155,181,0.12); border: 1px solid rgba(138,155,181,0.4); color: #a9b8cf; }
 
-.meta-row { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; font-family: "Space Mono", monospace; font-size: 0.64rem; color: #8a9bb5; letter-spacing: 0.06em; margin-bottom: 1rem; }
-.meta-row i { color: #c9a84c; margin-right: 0.3rem; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; font-family: "Space Mono", monospace; font-size: 0.64rem; color: #a8c1cf; letter-spacing: 0.06em; margin-bottom: 1rem; }
+.meta-row i { color: #fde5cb; margin-right: 0.3rem; }
 
 /* ── Equipo de trabajo ────────────────────────────────────────── */
 .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
-.team-card { background: rgba(201,168,76,0.07); border: 1px solid rgba(201,168,76,0.22); border-radius: 12px; padding: 1.1rem 1.2rem; }
-.team-card .area { font-family: "Space Mono", monospace; font-size: 0.58rem; color: #c9a84c; letter-spacing: 0.15em; text-transform: uppercase; display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.55rem; }
-.team-card .person { font-size: 0.95rem; color: #f5f0e8; font-weight: 600; line-height: 1.5; }
-.team-card .role { font-size: 0.78rem; color: #8a9bb5; line-height: 1.55; margin-top: 0.4rem; }
-.team-card.lead { background: linear-gradient(135deg, rgba(201,168,76,0.18), rgba(21,37,64,0.9)); border-color: rgba(201,168,76,0.55); }
+.team-card { background: rgba(253,229,203,0.07); border: 1px solid rgba(253,229,203,0.22); border-radius: 12px; padding: 1.1rem 1.2rem; }
+.team-card .area { font-family: "Space Mono", monospace; font-size: 0.58rem; color: #fde5cb; letter-spacing: 0.15em; text-transform: uppercase; display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.55rem; }
+.team-card .person { font-size: 0.95rem; color: #fff1e2; font-weight: 600; line-height: 1.5; }
+.team-card .role { font-size: 0.78rem; color: #a8c1cf; line-height: 1.55; margin-top: 0.4rem; }
+.team-card.lead { background: linear-gradient(135deg, rgba(253,229,203,0.18), rgba(11,69,102,0.9)); border-color: rgba(253,229,203,0.55); }
 
 /* ── Flujo de proceso ─────────────────────────────────────────── */
 .flow { display: flex; flex-wrap: wrap; align-items: stretch; gap: 0.5rem; }
-.flow-step { flex: 1 1 140px; background: rgba(201,168,76,0.07); border: 1px solid rgba(201,168,76,0.22); border-radius: 10px; padding: 0.85rem; text-align: center; font-size: 0.82rem; color: #f5f0e8; }
-.flow-step i { display: block; color: #c9a84c; font-size: 1.1rem; margin-bottom: 0.4rem; }
-.flow-step small { display: block; color: #8a9bb5; font-size: 0.72rem; margin-top: 0.25rem; }
-.flow-arrow { display: flex; align-items: center; color: rgba(201,168,76,0.6); }
+.flow-step { flex: 1 1 140px; background: rgba(253,229,203,0.07); border: 1px solid rgba(253,229,203,0.22); border-radius: 10px; padding: 0.85rem; text-align: center; font-size: 0.82rem; color: #fff1e2; }
+.flow-step i { display: block; color: #fde5cb; font-size: 1.1rem; margin-bottom: 0.4rem; }
+.flow-step small { display: block; color: #a8c1cf; font-size: 0.72rem; margin-top: 0.25rem; }
+.flow-arrow { display: flex; align-items: center; color: rgba(253,229,203,0.6); }
 @media (max-width: 700px) { .flow-arrow { display: none; } }
 
 /* ── Page-load animations ─────────────────────────────────────── */

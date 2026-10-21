@@ -1,0 +1,30 @@
+.nav-brand img {
+  display: block;
+  width: 92px;
+  max-height: 46px;
+  object-fit: contain;
+}
+
+nav {
+  gap: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+nav > div {
+  flex-wrap: nowrap !important;
+  gap: 0.1rem !important;
+}
+
+nav a:not(.nav-brand) {
+  padding: 0.25rem 0.34rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .nav-brand img {
+    width: 84px;
+  }
+}
