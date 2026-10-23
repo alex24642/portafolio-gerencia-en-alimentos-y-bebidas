@@ -32,9 +32,9 @@
     smooth.y += (mouse.y - smooth.y) * 0.1;
     glow.style.background =
       'radial-gradient(320px circle at ' + (smooth.x | 0) + 'px ' + (smooth.y | 0) + 'px,' +
-      'rgba(201,168,76,.18) 0%,' +
-      'rgba(201,168,76,.10) 30%,' +
-      'rgba(201,168,76,.04) 60%,' +
+      'rgba(253,229,203,.18) 0%,' +
+      'rgba(253,229,203,.10) 30%,' +
+      'rgba(253,229,203,.04) 60%,' +
       'transparent 100%)';
     requestAnimationFrame(glowLoop);
   }

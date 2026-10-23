@@ -4,7 +4,7 @@
    ================================================================ */
 
 /* ── Fonts ─────────────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap');
 
 /* ── Liquid glass ──────────────────────────────────────────────── */
 .liquid-glass {
@@ -88,7 +88,7 @@ nav.liquid-glass {
   padding: 2rem 2.5rem;
 }
 .cinematic-label {
-  font-family: "Space Mono", monospace;
+  font-family: "Nunito", sans-serif;
   font-size: 0.6rem;
   color: rgba(253,229,203,0.9);
   letter-spacing: 0.25em;
@@ -97,7 +97,7 @@ nav.liquid-glass {
   margin-bottom: 0.5rem;
 }
 .cinematic-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Fredoka", sans-serif;
   font-size: clamp(1.5rem, 3vw, 2.2rem);
   font-weight: 300;
   color: #fff1e2;
@@ -117,7 +117,7 @@ nav.liquid-glass {
 }
 .fc-divider i { color: rgba(231,76,60,0.85); font-size: 1rem; flex-shrink: 0; }
 .fc-label {
-  font-family: "Space Mono", monospace;
+  font-family: "Nunito", sans-serif;
   font-size: 0.58rem;
   color: rgba(231,76,60,0.9);
   letter-spacing: 0.2em;
@@ -139,22 +139,22 @@ nav.liquid-glass {
   margin: 2.5rem 0 2rem;
 }
 .section-divider .sd-line { flex: 1; height: 1px; background: linear-gradient(90deg, rgba(253,229,203,0.4), transparent); }
-.section-divider .sd-label { font-family: "Space Mono", monospace; font-size: 0.6rem; color: rgba(253,229,203,0.8); letter-spacing: 0.25em; text-transform: uppercase; white-space: nowrap; }
+.section-divider .sd-label { font-family: "Nunito", sans-serif; font-size: 0.6rem; color: rgba(253,229,203,0.8); letter-spacing: 0.25em; text-transform: uppercase; white-space: nowrap; }
 .section-divider .sd-line-r { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(253,229,203,0.4)); }
 
 /* ── Estado de actividades ────────────────────────────────────── */
-.status { display: inline-flex; align-items: center; gap: 0.35rem; font-family: "Space Mono", monospace; font-size: 0.56rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 999px; white-space: nowrap; }
+.status { display: inline-flex; align-items: center; gap: 0.35rem; font-family: "Nunito", sans-serif; font-size: 0.56rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 999px; white-space: nowrap; }
 .status.done     { background: rgba(46,204,113,0.12); border: 1px solid rgba(46,204,113,0.4); color: #6fdc9b; }
 .status.progress { background: rgba(253,229,203,0.14); border: 1px solid rgba(253,229,203,0.5); color: #fff0df; }
 .status.planned  { background: rgba(138,155,181,0.12); border: 1px solid rgba(138,155,181,0.4); color: #a9b8cf; }
 
-.meta-row { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; font-family: "Space Mono", monospace; font-size: 0.64rem; color: #a8c1cf; letter-spacing: 0.06em; margin-bottom: 1rem; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; font-family: "Nunito", sans-serif; font-size: 0.64rem; color: #a8c1cf; letter-spacing: 0.06em; margin-bottom: 1rem; }
 .meta-row i { color: #fde5cb; margin-right: 0.3rem; }
 
 /* ── Equipo de trabajo ────────────────────────────────────────── */
 .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
 .team-card { background: rgba(253,229,203,0.07); border: 1px solid rgba(253,229,203,0.22); border-radius: 12px; padding: 1.1rem 1.2rem; }
-.team-card .area { font-family: "Space Mono", monospace; font-size: 0.58rem; color: #fde5cb; letter-spacing: 0.15em; text-transform: uppercase; display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.55rem; }
+.team-card .area { font-family: "Nunito", sans-serif; font-size: 0.58rem; color: #fde5cb; letter-spacing: 0.15em; text-transform: uppercase; display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.55rem; }
 .team-card .person { font-size: 0.95rem; color: #fff1e2; font-weight: 600; line-height: 1.5; }
 .team-card .role { font-size: 0.78rem; color: #a8c1cf; line-height: 1.55; margin-top: 0.4rem; }
 .team-card.lead { background: linear-gradient(135deg, rgba(253,229,203,0.18), rgba(11,69,102,0.9)); border-color: rgba(253,229,203,0.55); }

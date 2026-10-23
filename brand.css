@@ -1,30 +1,243 @@
+:root {
+  --navy: #073453;
+  --navy-mid: #0b4566;
+  --navy-soft: #145572;
+  --gold: #fde5cb;
+  --gold-light: #fff0df;
+  --cream: #fff8f0;
+  --cream-dark: #f2cfaa;
+  --white: #ffffff;
+  --text-dim: #b8cbd5;
+  --card-bg: rgba(11, 69, 102, 0.94);
+  --border: rgba(253, 229, 203, 0.24);
+}
+
 .nav-brand img {
   display: block;
-  width: 92px;
-  max-height: 46px;
+  width: 104px;
+  max-height: 50px;
   object-fit: contain;
 }
 
 nav {
-  gap: 0.5rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  gap: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  background: rgba(7, 52, 83, 0.97);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
 }
 
 nav > div {
+  flex: 1;
+  justify-content: flex-start;
   flex-wrap: nowrap !important;
-  gap: 0.1rem !important;
+  gap: 0.2rem !important;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+nav > div::-webkit-scrollbar {
+  display: none;
 }
 
 nav a:not(.nav-brand) {
-  padding: 0.25rem 0.34rem;
-  font-size: 0.62rem;
+  flex: 0 0 auto;
+  padding: 0.4rem 0.35rem;
+  font-size: 0.64rem;
+  font-weight: 600;
   letter-spacing: 0.04em;
   white-space: nowrap;
+  border-radius: 5px;
+}
+
+nav a:not(.nav-brand):hover {
+  color: var(--gold);
+  background: rgba(253, 229, 203, 0.1);
+}
+
+body::before {
+  opacity: 0.15;
+}
+
+.card,
+.practice,
+.autoevaluation,
+.final-reflection,
+.tl-card {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+}
+
+.btn-next,
+.btn-home,
+.btn-download {
+  border-radius: 6px;
 }
 
 @media (max-width: 768px) {
-  .nav-brand img {
-    width: 84px;
+  nav {
+    gap: 0.65rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
   }
+
+  .nav-brand img {
+    width: 82px;
+    max-height: 42px;
+  }
+
+  nav a:not(.nav-brand) {
+    padding: 0.38rem 0.35rem;
+    font-size: 0.6rem;
+  }
+}
+
+/* ================================================================
+   Identidad Narve — tipografía y acabado corporativo
+   Fredoka (titulares, similar al logotipo) · Nunito (etiquetas,
+   similar al eslogan) · Nunito Sans (texto corrido)
+   ================================================================ */
+:root {
+  --font-display: "Fredoka", "Nunito", sans-serif;
+  --font-label: "Nunito", sans-serif;
+  --font-body: "Nunito Sans", "Nunito", sans-serif;
+  --radius: 10px;
+}
+
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgba(20, 85, 114, 0.55), transparent 60%),
+    radial-gradient(900px 500px at -10% 110%, rgba(253, 229, 203, 0.06), transparent 60%),
+    var(--navy);
+  background-attachment: fixed;
+  letter-spacing: 0.005em;
+}
+
+h1, h2, h3, h4,
+.page-title,
+.practice-title,
+.tl-title,
+.cinematic-title {
+  font-family: var(--font-display);
+  letter-spacing: -0.005em;
+}
+
+.page-title,
+.cinematic-title {
+  font-weight: 500;
+}
+
+.page-title strong {
+  font-weight: 600;
+}
+
+/* Fredoka no tiene cursiva: citas y reflexiones en estilo recto, más sobrio */
+.reflection p,
+.hero-quote,
+.final-reflection blockquote,
+blockquote {
+  font-style: normal !important;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+/* Etiquetas en mayúsculas: estilo del eslogan "CREAMOS MOMENTOS..." */
+.page-tag,
+.section-label,
+.info-label,
+.unit-num,
+.practice-number,
+.stat-label,
+.stat-box .lbl,
+.sd-label,
+.cinematic-label,
+.doc-type,
+.tl-meta {
+  font-family: var(--font-label);
+  font-weight: 800;
+}
+
+.page-tag {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.page-tag::before,
+.page-tag::after {
+  content: "";
+  width: 22px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.page-line {
+  width: 64px;
+  height: 3px;
+  border-radius: 0;
+  background: var(--gold);
+}
+
+/* Tarjetas: bordes más rectos, superficie sólida, acento superior */
+.card,
+.practice,
+.autoevaluation,
+.final-reflection,
+.tl-card {
+  border-radius: var(--radius) !important;
+  background: linear-gradient(180deg, rgba(14, 76, 110, 0.92), rgba(9, 58, 89, 0.94)) !important;
+  border: 1px solid rgba(253, 229, 203, 0.16) !important;
+  position: relative;
+}
+
+.card::after,
+.practice::after,
+.tl-card::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 1.5rem;
+  width: 48px;
+  height: 3px;
+  background: var(--gold);
+  border-radius: 0 0 2px 2px;
+}
+
+.card:hover,
+.practice:hover,
+.tl-card:hover {
+  border-color: rgba(253, 229, 203, 0.38) !important;
+}
+
+.unit-card,
+.team-card,
+.flow-step,
+.resource-card,
+.achievement-card,
+.info-box {
+  border-radius: 8px !important;
+}
+
+.btn-next,
+.btn-home,
+.btn-download,
+.btn-preview {
+  font-family: var(--font-label) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em;
+}
+
+.btn-next,
+.btn-home {
+  font-size: 0.8rem;
+}
+
+footer {
+  font-family: var(--font-label);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: rgba(5, 40, 64, 0.96) !important;
 }

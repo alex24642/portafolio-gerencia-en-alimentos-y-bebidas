@@ -4,24 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Empresa Narve · Producción | Portafolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="shared-effects.css" />
   <style>
     :root { --navy:#073453; --navy-mid:#0b4566; --navy-soft:#145572; --gold:#fde5cb; --gold-light:#fff0df; --cream:#fff1e2; --cream-dark:#f2cfaa; --white:#ffffff; --text-dim:#a8c1cf; --card-bg:rgba(11,69,102,0.85); --border:rgba(253,229,203,0.25); --radius:14px; }
     *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
     html { scroll-behavior:smooth; }
-    body { font-family:"DM Sans", sans-serif; background:var(--navy); color:var(--cream); overflow-x:hidden; line-height:1.7; }
-    h1, h2, h3, h4 { font-family:"Cormorant Garamond", serif; }
+    body { font-family:"Nunito Sans", sans-serif; background:var(--navy); color:var(--cream); overflow-x:hidden; line-height:1.7; }
+    h1, h2, h3, h4 { font-family:"Fredoka", sans-serif; }
     body::before { content:""; position:fixed; inset:0; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events:none; z-index:0; opacity:0.4; }
     nav { position:fixed; top:0; left:0; right:0; z-index:999; padding:0 2rem; height:70px; display:flex; align-items:center; justify-content:space-between; background:rgba(7,52,83,0.92); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); }
-    .nav-brand { font-family:"Cormorant Garamond", serif; font-size:1.3rem; font-weight:600; color:var(--gold); text-decoration:none; }
+    .nav-brand { font-family:"Fredoka", sans-serif; font-size:1.3rem; font-weight:600; color:var(--gold); text-decoration:none; }
     .nav-brand span { color:var(--cream); }
     nav a { color:var(--text-dim); text-decoration:none; font-size:0.75rem; font-weight:500; letter-spacing:0.07em; text-transform:uppercase; padding:0.4rem 0.7rem; border-radius:6px; transition:all 0.3s; }
     nav a:hover { color:var(--gold); background:rgba(253,229,203,0.08); }
     main { padding-top:100px; padding-bottom:80px; max-width:1100px; margin:0 auto; position:relative; z-index:1; padding-left:1.5rem; padding-right:1.5rem; }
     .page-header { text-align:center; margin-bottom:3rem; }
-    .page-tag { font-family:"Space Mono", monospace; font-size:0.65rem; color:var(--gold); letter-spacing:0.25em; text-transform:uppercase; display:block; margin-bottom:1rem; }
+    .page-tag { font-family:"Nunito", sans-serif; font-size:0.65rem; color:var(--gold); letter-spacing:0.25em; text-transform:uppercase; display:block; margin-bottom:1rem; }
     .page-title { font-size:clamp(2.2rem, 4vw, 3rem); font-weight:300; color:var(--cream); }
     .page-title strong { color:var(--gold); font-weight:600; }
     .page-line { width:50px; height:2px; background:linear-gradient(90deg, var(--gold), var(--gold-light)); margin:1.5rem auto 0; border-radius:2px; }
@@ -31,30 +31,30 @@
     .practice { background:var(--card-bg); border:1px solid var(--border); border-radius:16px; overflow:hidden; margin-bottom:2.5rem; backdrop-filter:blur(10px); transition:border-color 0.35s; }
     .practice:hover { border-color:rgba(253,229,203,0.45); }
     .practice-header { padding:1.5rem 2rem; background:linear-gradient(135deg, rgba(253,229,203,0.1), rgba(11,69,102,0.5)); border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.75rem; }
-    .practice-number { font-family:"Space Mono", monospace; font-size:0.6rem; color:var(--gold); letter-spacing:0.2em; text-transform:uppercase; }
-    .practice-title { font-family:"Cormorant Garamond", serif; font-size:1.5rem; font-weight:600; color:var(--cream); margin-top:0.25rem; }
-    .practice-badge { font-family:"Space Mono", monospace; font-size:0.6rem; letter-spacing:0.12em; text-transform:uppercase; padding:0.3rem 0.8rem; border-radius:999px; background:rgba(253,229,203,0.12); border:1px solid rgba(253,229,203,0.3); color:var(--gold); white-space:nowrap; }
+    .practice-number { font-family:"Nunito", sans-serif; font-size:0.6rem; color:var(--gold); letter-spacing:0.2em; text-transform:uppercase; }
+    .practice-title { font-family:"Fredoka", sans-serif; font-size:1.5rem; font-weight:600; color:var(--cream); margin-top:0.25rem; }
+    .practice-badge { font-family:"Nunito", sans-serif; font-size:0.6rem; letter-spacing:0.12em; text-transform:uppercase; padding:0.3rem 0.8rem; border-radius:999px; background:rgba(253,229,203,0.12); border:1px solid rgba(253,229,203,0.3); color:var(--gold); white-space:nowrap; }
     .practice-body { padding:1.75rem 2rem; }
 
-    .section-label { font-family:"Space Mono", monospace; font-size:0.6rem; color:var(--gold); letter-spacing:0.18em; text-transform:uppercase; display:block; margin-bottom:0.6rem; margin-top:1.4rem; }
+    .section-label { font-family:"Nunito", sans-serif; font-size:0.6rem; color:var(--gold); letter-spacing:0.18em; text-transform:uppercase; display:block; margin-bottom:0.6rem; margin-top:1.4rem; }
     .section-label:first-child { margin-top:0; }
     p.body-text { font-size:0.93rem; color:rgba(245,240,232,0.82); line-height:1.8; margin-bottom:0.5rem; }
 
     .info-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:0.85rem; margin-top:0.5rem; }
     .info-box { background:rgba(253,229,203,0.07); border:1px solid rgba(253,229,203,0.18); border-radius:10px; padding:0.85rem 1rem; }
-    .info-box .lbl { font-family:"Space Mono",monospace; font-size:0.58rem; color:var(--gold); letter-spacing:0.15em; text-transform:uppercase; display:block; margin-bottom:0.3rem; }
+    .info-box .lbl { font-family:"Nunito", sans-serif; font-size:0.58rem; color:var(--gold); letter-spacing:0.15em; text-transform:uppercase; display:block; margin-bottom:0.3rem; }
     .info-box .val { font-size:0.88rem; color:var(--cream); }
 
     .steps { list-style:none; counter-reset:step-counter; }
     .steps li { counter-increment:step-counter; padding:0.5rem 0 0.5rem 2.5rem; position:relative; font-size:0.9rem; color:rgba(245,240,232,0.82); border-bottom:1px solid rgba(255,255,255,0.04); }
     .steps li:last-child { border-bottom:none; }
-    .steps li::before { content:counter(step-counter, decimal-leading-zero); position:absolute; left:0; top:0.5rem; font-family:"Space Mono",monospace; font-size:0.62rem; color:var(--gold); }
+    .steps li::before { content:counter(step-counter, decimal-leading-zero); position:absolute; left:0; top:0.5rem; font-family:"Nunito", sans-serif; font-size:0.62rem; color:var(--gold); }
 
     .result-box { background:rgba(253,229,203,0.07); border:1px solid rgba(253,229,203,0.25); border-radius:10px; padding:1rem 1.25rem; margin-top:0.5rem; }
     .result-box p { font-size:0.9rem; color:var(--cream); line-height:1.75; }
 
     .reflection { background:rgba(253,229,203,0.06); border-left:3px solid var(--gold); border-radius:0 10px 10px 0; padding:1rem 1.25rem; margin-top:1.25rem; }
-    .reflection p { font-family:"Cormorant Garamond", serif; font-style:italic; font-size:1.02rem; color:var(--cream-dark); line-height:1.75; }
+    .reflection p { font-family:"Fredoka", sans-serif; font-style:italic; font-size:1.02rem; color:var(--cream-dark); line-height:1.75; }
 
     /* Document preview & download */
     .doc-block { border:1px solid var(--border); border-radius:12px; overflow:hidden; margin-top:0.75rem; }
@@ -65,11 +65,11 @@
     .doc-icon.pdf { color:#e74c3c; }
     .doc-icon.ppt { color:#d35400; }
     .doc-name { font-size:0.88rem; font-weight:600; color:var(--cream); }
-    .doc-type { font-family:"Space Mono",monospace; font-size:0.58rem; color:var(--text-dim); letter-spacing:0.1em; text-transform:uppercase; }
+    .doc-type { font-family:"Nunito", sans-serif; font-size:0.58rem; color:var(--text-dim); letter-spacing:0.1em; text-transform:uppercase; }
     .doc-actions { display:flex; gap:0.5rem; flex-shrink:0; }
-    .btn-download { display:inline-flex; align-items:center; gap:0.4rem; background:var(--gold); color:var(--navy); font-family:"Space Mono",monospace; font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; padding:0.45rem 0.9rem; border-radius:6px; text-decoration:none; transition:0.25s; }
+    .btn-download { display:inline-flex; align-items:center; gap:0.4rem; background:var(--gold); color:var(--navy); font-family:"Nunito", sans-serif; font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; padding:0.45rem 0.9rem; border-radius:6px; text-decoration:none; transition:0.25s; }
     .btn-download:hover { background:var(--gold-light); transform:translateY(-1px); }
-    .btn-preview { display:inline-flex; align-items:center; gap:0.4rem; background:rgba(253,229,203,0.12); border:1px solid rgba(253,229,203,0.3); color:var(--gold); font-family:"Space Mono",monospace; font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; padding:0.45rem 0.9rem; border-radius:6px; text-decoration:none; transition:0.25s; cursor:pointer; }
+    .btn-preview { display:inline-flex; align-items:center; gap:0.4rem; background:rgba(253,229,203,0.12); border:1px solid rgba(253,229,203,0.3); color:var(--gold); font-family:"Nunito", sans-serif; font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; padding:0.45rem 0.9rem; border-radius:6px; text-decoration:none; transition:0.25s; cursor:pointer; }
     .btn-preview:hover { background:rgba(253,229,203,0.22); border-color:var(--gold); }
     .pdf-embed { width:100%; height:520px; border:none; display:block; background:#fff; }
     .pdf-collapsed { display:none; }
@@ -215,8 +215,50 @@
           <p>Entre septiembre y octubre el departamento pasó de la conformación del equipo a una producción piloto completa, con cada área cumpliendo su función y registrando datos. La información recogida servirá para el informe de gestión de finales de octubre y para definir acciones de mejora.</p>
         </div>
 
-        <div class="card" style="text-align:center; background:rgba(253,229,203,0.05); border-style:dashed; margin:1.25rem 0 0;">
-          <p style="font-size:0.88rem; color:var(--text-dim);"><i class="fas fa-folder-open" style="color:var(--gold); margin-right:0.4rem;"></i> Los documentos de esta práctica (organigrama, fichas técnicas, requisiciones, kardex, registros de calidad) se agregarán en la carpeta <strong style="color:var(--cream);">aprendizaje practico experimetal/</strong>.</p>
+        <div class="card" style="margin:1.25rem 0 0;">
+          <h3><i class="fas fa-folder-open" style="color:var(--gold);"></i> Evidencias documentales del proyecto</h3>
+          <p class="body-text">Informes y material de presentación elaborados para documentar el trabajo del Departamento de Producción.</p>
+
+          <div class="doc-block">
+            <div class="doc-bar">
+              <div class="doc-info">
+                <i class="fas fa-file-word doc-icon" style="color:#5b9bd5;"></i>
+                <div>
+                  <div class="doc-name">Informe de Producción — Septiembre 2026</div>
+                  <div class="doc-type">Documento Word · Informe de actividades</div>
+                </div>
+              </div>
+              <div class="doc-actions">
+                <a class="btn-download" href="aprendizaje%20practico%20experimetal/NAVRE_Informe_Produccion_Septiembre_corregido.docx" download>
+                  <i class="fas fa-download"></i> Descargar
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="doc-block">
+            <div class="doc-bar">
+              <div class="doc-info">
+                <i class="fas fa-file-powerpoint doc-icon" style="color:#ed7d31;"></i>
+                <div>
+                  <div class="doc-name">Presentación Pecha Kucha — Septiembre</div>
+                  <div class="doc-type">Presentación PowerPoint · Septiembre</div>
+                </div>
+              </div>
+              <div class="doc-actions">
+                <a class="btn-download" href="aprendizaje%20practico%20experimetal/Presentacion_PechaKucha_Septiembre.pptx" download>
+                  <i class="fas fa-download"></i> Descargar
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="reflection">
+            <p>Al revisar el informe de producción, pude relacionar la planificación con los resultados registrados y reconocer la importancia de documentar cada actividad para evaluar el trabajo del equipo y proponer mejoras.</p>
+          </div>
+          <div class="reflection">
+            <p>Preparar una presentación como apoyo visual me ayudó a organizar la información del proyecto y comunicar sus ideas de forma más clara al equipo y a quienes revisan el portafolio.</p>
+          </div>
         </div>
 
         <div class="reflection">
@@ -242,6 +284,7 @@
       el.classList.toggle('pdf-open', isHidden);
       // Update button text
       var btn = el.previousElementSibling.querySelector('.btn-preview');
+      btn.setAttribute('aria-expanded', String(isHidden));
       btn.innerHTML = isHidden
         ? '<i class="fas fa-eye-slash"></i> Ocultar'
         : '<i class="fas fa-eye"></i> Vista previa';
