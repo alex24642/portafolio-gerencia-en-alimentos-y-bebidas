@@ -83,10 +83,12 @@
     .hero-btn span { font-size:0.9rem; }
     .hero-btn small { font-size:0.7rem; color:var(--text-dim); font-weight:300; }
 
+    .hero-buttons--two { grid-template-columns:repeat(2, minmax(0, 320px)); justify-content:center; }
+    .hero-buttons--two .hero-btn { padding:2rem 1.5rem; }
     footer { position:fixed; bottom:0; width:100%; border-top:1px solid var(--border); padding:0.85rem 2rem; text-align:center; font-size:0.72rem; color:var(--text-dim); background:rgba(7,52,83,0.92); }
 
     @media (max-width:768px) { .hero-stats { gap:1.5rem; } nav a { font-size:0.65rem; padding:0.3rem 0.45rem; } }
-    @media (max-width:500px) { .hero-buttons { grid-template-columns:repeat(2, 1fr); } .hero-stats { gap:1.2rem; } .stat-number { font-size:2rem; } }
+    @media (max-width:500px) { .hero-buttons, .hero-buttons--two { grid-template-columns:1fr; } .hero-stats { gap:1.2rem; } .stat-number { font-size:2rem; } }
   </style>
   <link rel="stylesheet" href="brand.css" />
 </head>
@@ -94,15 +96,8 @@
   <nav class="liquid-glass">
     <a class="nav-brand" href="index.html" aria-label="Narve - inicio"><img src="assets/narve-logo.png" alt="Narve: Creamos momentos, servimos sabor" /></a>
     <div style="display:flex; gap:0.3rem; flex-wrap:wrap;">
-      <a href="personal.html">Personal</a>
-      <a href="docente.html">Docente</a>
-      <a href="asignatura.html">Asignatura</a>
-      <a href="medio-ciclo.html">Actividades</a>
-      <a href="contacto-docente.html">Con Docente</a>
-      <a href="practico.html">Práctico</a>
-      <a href="autonomo.html">Autónomo</a>
-      <a href="logros.html">Logros</a>
-      <a href="bibliografia.html">Bibliografía</a>
+      <a href="septiembre.html">Producción Septiembre</a>
+      <a href="octubre.html">Producción Octubre</a>
     </div>
   </nav>
 
@@ -147,65 +142,16 @@
         <cite>— Reflexión personal, Eduardo Ilbay S.</cite>
       </blockquote>
 
-      <div class="hero-stats">
-        <div class="stat">
-          <div class="stat-number">9</div>
-          <div class="stat-label">Actividades Sep–Oct</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">10</div>
-          <div class="stat-label">Integrantes del equipo</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">5</div>
-          <div class="stat-label">Áreas de producción</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">1</div>
-          <div class="stat-label">Empresa Narve</div>
-        </div>
-      </div>
-
-      <div class="hero-buttons">
-        <a href="personal.html" class="hero-btn">
-          <i class="fas fa-user"></i>
-          <span>Información Personal</span>
-          <small>Quién soy y mi motivación</small>
+      <div class="hero-buttons hero-buttons--two">
+        <a href="septiembre.html" class="hero-btn">
+          <i class="fas fa-industry"></i>
+          <span>Producción Septiembre</span>
+          <small>Departamento de Producción · Narve</small>
         </a>
-        <a href="docente.html" class="hero-btn">
-          <i class="fas fa-chalkboard-user"></i>
-          <span>Docente</span>
-          <small>Mi guía académica</small>
-        </a>
-        <a href="asignatura.html" class="hero-btn">
-          <i class="fas fa-book-open"></i>
-          <span>Asignatura</span>
-          <small>La materia y sus objetivos</small>
-        </a>
-        <a href="medio-ciclo.html" class="hero-btn">
-          <i class="fas fa-file-lines"></i>
-          <span>Actividades</span>
-          <small>Cronograma Septiembre – Octubre</small>
-        </a>
-        <a href="contacto-docente.html" class="hero-btn">
-          <i class="fas fa-chalkboard"></i>
-          <span>Con el Docente</span>
-          <small>Clases y actividades guiadas</small>
-        </a>
-        <a href="practico.html" class="hero-btn">
-          <i class="fas fa-flask"></i>
-          <span>Aprendizaje Práctico</span>
-          <small>Empresa Narve · Producción</small>
-        </a>
-        <a href="autonomo.html" class="hero-btn">
-          <i class="fas fa-lightbulb"></i>
-          <span>Aprendizaje Autónomo</span>
-          <small>Investigación independiente</small>
-        </a>
-        <a href="logros.html" class="hero-btn">
-          <i class="fas fa-star"></i>
-          <span>Logros y Resultados</span>
-          <small>Competencias adquiridas</small>
+        <a href="octubre.html" class="hero-btn">
+          <i class="fas fa-chart-line"></i>
+          <span>Producción Octubre</span>
+          <small>Departamento de Producción · Narve</small>
         </a>
       </div>
 
